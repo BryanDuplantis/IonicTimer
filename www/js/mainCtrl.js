@@ -4,25 +4,21 @@ angular.module("starter")
 
     $scope.display = 0;
     $scope.startTime = 10;
+
     // var intervalCtrl = $interval(function() {
     //     $scope.display = $scope.startTime--;
     //   }, 1000);
 
     $scope.startBtn = function () {
-      $interval(function () {
+      var myTimer = $interval(function () {
         $scope.display = $scope.startTime--;
-      }, 1000);
+      }, 1000, $scope.startTime + 1);
     }
 
-    $scope.stopInterval = function () {
-    //   if ($scope.startTime === 0) {
-    //     $interval.cancel();
-    //     stop = undefined;
-    //   }
-    }
-
-    $scope.stopBtn = function () {
-      $interval.cancel($interval);
-    }
+    $scope.resetBtn = function() {
+          $scope.display = 10;
+          $scope.startTime = 10;
+          $interval.cancel(myTimer);
+        };
 
 }]);

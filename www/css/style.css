@@ -3,6 +3,12 @@
   height: 50px;
   width: 100%;
   text-align: right;
+  padding-top: 15px;
+  font-size: 35px;
   background-color: lightgrey;
+}
+
+.button-balanced, .button-dark {
+  width: 100%;
 }
 
