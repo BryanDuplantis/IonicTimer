@@ -1,8 +1,8 @@
 .display {
   margin-top: 20px;
-  height: 100px;
+  height: 50px;
   width: 100%;
   text-align: right;
-  font-size: 60px;
   background-color: lightgrey;
 }
+
