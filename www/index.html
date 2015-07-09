@@ -26,9 +26,21 @@
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+        <h1 class="title">Ionic Timer</h1>
       </ion-header-bar>
       <ion-content>
+
+      <div class="display"> {{ display }} </div>
+
+      <div class="row">
+        <button class="button button-balanced" ng-click="startBtn();">
+          Start
+        </button>
+        <button class="button button-assertive" ng-click="stopBtn();">
+          Stop
+        </button>
+      </div>
+
       </ion-content>
     </ion-pane>
   </body>

@@ -1,1 +1,8 @@
-/* Empty. Add your own CSS if you like */
+.display {
+  margin-top: 20px;
+  height: 100px;
+  width: 100%;
+  text-align: right;
+  font-size: 60px;
+  background-color: lightgrey;
+}
